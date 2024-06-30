@@ -1,0 +1,39 @@
+  =========CRUD==============
+  1.Create=> Nwe Table:
+  INSERT INTO students(), VALUES();
+
+  CREATE TABLE students (
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(191) NOT NULL,
+    roll INT NOT NULL,
+    class INT NOT NULL,
+    phone VARCHAR(191) NOT NULL,
+    email VARCHAR(191) NOT NULL,
+    address TEXT NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+  2.Read=>all data read:
+
+  Table Read System:
+  SELECT //object
+  FROM //table name
+  WHERE //number number KEY
+
+  SELECT * FROM students;
+  SELECT * FROM students WHERE roll = 185427;
+  SELECT * FROM students WHERE id = 4;
+
+  3.Update=> for specefic id
+  UPDATE //object
+  SET //table name
+  WHERE //number number KEY
+
+  UPDATE students SET phone = '+8801988731099' WHERE id = 3;
+
+  4.Delete=> 
+  Delete FROM //table name
+  WHERE //number number KEY
+
+  DELETE FROM students WHERE id = 5;
